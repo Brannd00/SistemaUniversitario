@@ -54,7 +54,6 @@ public class EstudianteView extends JFrame {
     private static final String MENSAJE_SELECCIONE_ESTUDIANTE = "Primero busque y seleccione un estudiante en la tabla.";
     private static final String PROFESOR_ASIGNADO_PREFIJO = "Profesor asignado: ";
 
-    // ── Constantes finales para colores ────────────────────────────────────────
     private static final Color COLOR_BOTON_FONDO = new Color(59, 139, 212);
     private static final Color COLOR_BOTON_CARRERA = new Color(76, 175, 80);
     private static final Color COLOR_BOTON_LIMPIAR = new Color(244, 67, 54);
