@@ -18,7 +18,7 @@ public class EstudianteView extends JFrame {
     private static final int ANCHO_CAMPO_AGREGAR = 12;
     private static final int ALTO_FILA_TABLA = 24;
 
-    private static final String TITULO_VENTANA = "Gestión de Estudiantes — MVC (Búsqueda + Agregar + Cursos + Profesores)";
+    private static final String TITULO_VENTANA = "Gestión de Estudiantes ";
     private static final String TITULO_PANEL_BUSQUEDA = "Buscar estudiante por nombre";
     private static final String TITULO_PANEL_CARRERA = "Buscar por carrera";
     private static final String TITULO_PANEL_AGREGAR = "Agregar nuevo estudiante";
