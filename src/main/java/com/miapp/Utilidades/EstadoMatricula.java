@@ -8,6 +8,8 @@ package com.miapp.Utilidades;
  *
  * @author brann
  */
-public class EstadoMatricula {
-    
+public enum EstadoMatricula {
+    ACTIVO,
+    EGRESADO,
+    RETIRADO,
 }

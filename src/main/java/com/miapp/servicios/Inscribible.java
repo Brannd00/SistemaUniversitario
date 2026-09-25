@@ -8,6 +8,8 @@ package com.miapp.servicios;
  *
  * @author brann
  */
-public class Inscribible {
-    
+import com.miapp.modelo.Curso;
+
+public interface Inscribible {
+    boolean inscribir(Curso curso);
 }
