@@ -15,6 +15,8 @@ public class Curso {
 
     private List<Estudiante> estudiantes = new ArrayList<>();
 
+    private Profesor profesor;
+
     public Curso(String codigo, String nombre, int creditos) {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -32,6 +34,9 @@ public class Curso {
     }
 
     public List<Estudiante> getEstudiantes() { return estudiantes; }
+
+    public Profesor getProfesor() { return profesor; }
+    public void setProfesor(Profesor profesor) { this.profesor = profesor; }
 
     public String getCodigo() { return codigo; }
     public void setCodigo(String codigo) { this.codigo = codigo; }

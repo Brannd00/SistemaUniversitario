@@ -4,9 +4,14 @@
  */
 package com.miapp.modelo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Profesor extends Persona {
 
-    private final double salarioBase;
+    private double salarioBase;
+
+    private List<Curso> cursos = new ArrayList<>();
 
     public Profesor(int id, String nombre, String apellido, double salarioBase) {
         super(id, nombre, apellido);
@@ -19,10 +24,28 @@ public class Profesor extends Persona {
     }
 
     public void impartirClase() {
-        System.out.println(getNombre() + " " + getApellido() + " está impartiendo una clase.");
+        System.out.println(getNombre() + " " + getApellido() + " esta impartiendo una clase.");
+    }
+
+    public boolean asignarCurso(Curso curso) {
+        if (curso == null || cursos.contains(curso)) {
+            return false;
+        }
+        cursos.add(curso);
+        curso.setProfesor(this);
+        return true;
+    }
+
+    public List<Curso> getCursos() {
+        return cursos;
     }
 
     public double getSalarioBase() {
         return salarioBase;
+    }
+
+    @Override
+    public String toString() {
+        return getNombre() + " " + getApellido();
     }
 }
